@@ -1,37 +1,30 @@
- setTimeout(function() {
-              box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
-            },i*2000)
-         
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lottery Winner</title>
+<style>
+body{margin:0;font-family:Arial;background:#fff3cd;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:white;padding:30px;border-radius:20px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.2);width:90%;max-width:400px}
+h1{color:#ff6b00;margin:0}
+h2{font-size:40px;margin:15px 0;color:#222}
+p{color:#555}
+button{background:#ff6b00;color:white;border:none;padding:15px 25px;font-size:18px;border-radius:10px;cursor:pointer;width:100%}
+#winner{font-size:28px;font-weight:bold;color:green;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1> LOTTERY WINNER </h1>
+<p>Congratulations to our lucky winner!</p>
+<h2 id="demo">Labonno</h2>
+<button onclick="pickWinner()">Pick Winner</button>
+<div id="winner"></div>
+<p style="margin-top:20px;font-size:12px">Live Result - 100% Fair Draw</p>
+</div>
 
-             setTimeout(function() {
-               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
-            },i*3000)
-         
-
-             setTimeout(function() {
-               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
-            },i*4000)
-         
-
-             setTimeout(function() {
-               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
-            },i*5000)}
-
- if (winner) {
-                    const winnerDiv = document.createElement("div");
-                    winnerDiv.textContent = `Winner ${i + 1}: ${winner}`;
-                    listDiv.appendChild(winnerDiv);
-                }
-            }
-            if (winners.length === 0) {
-                alert("Please enter at least one name.");
-                return;
-            }
-            const listDiv = document.getElementById("list");
-            listDiv.innerHTML = "<h3>Lottery Participants:</h3><ul>" + names.map(name => `<li>${name}</li>`).join("") + "</ul>";
-        }
-
-
-        </script>
-       <script src="app.js">  </script>
+<script src="./app.js"></script>
+</body>
+</html>
          
