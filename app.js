@@ -23,7 +23,7 @@
 
  setTimeout(() => {
    console.log("i am einner labonno");
-   document.getElementById("demo").innerHTML = "labonno";
+   document.getElementById("demo").innerHTML = "I am winner labonno";
   }, 5000);
 
  
