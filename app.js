@@ -1,30 +1,46 @@
  //synchronous programming
-  setTimeout(() => {
-   console.log("Nripen");
-   document.getElementById("demo").innerHTML = "Nripen";
-  }, 1000);
+ setTimeout
+ https://onripen.github.io/lottery-winner-delay-fix-it/
 
- setTimeout(() => {
-   console.log("Joy");
-   document.getElementById("demo").innerHTML = "Joy";
-  }, 2000);
+ setTimeout(function() {
+              box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*2000)
+         
+
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*3000)
+         
+
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*4000)
+         
+
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*5000)}
+
+ if (winner) {
+                    const winnerDiv = document.createElement("div");
+                    winnerDiv.textContent = `Winner ${i + 1}: ${winner}`;
+                    listDiv.appendChild(winnerDiv);
+                }
+            }
+            if (winners.length === 0) {
+                alert("Please enter at least one name.");
+                return;
+            }
+            const listDiv = document.getElementById("list");
+            listDiv.innerHTML = "<h3>Lottery Participants:</h3><ul>" + names.map(name => `<li>${name}</li>`).join("") + "</ul>";
+        }
 
 
- setTimeout(() => {
-   console.log("Srabonti");
-   document.getElementById("demo").innerHTML = "Srabonti";
-  }, 3000);
+        </script>
+       <script src="app.js">  </script>
+         
 
 
- setTimeout(() => {
-   console.log("Kakoly");
-   document.getElementById("demo").innerHTML = "Kakoly";
-  }, 4000);
-
- setTimeout(() => {
-   console.log("i am einner labonno");
-   document.getElementById("demo").innerHTML = "I am winner labonno";
-  }, 5000);
 
  
 
