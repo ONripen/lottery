@@ -1,17 +1,37 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title> lottary winner Fix</title>
-</head>
+ setTimeout(function() {
+              box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*2000)
+         
 
-   
-<body>
-        <p id="demo"></p>
-       <p id="test"></p>
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*3000)
+         
 
-    
-        <script src="./app.js"></script>
-</body>
-</html>
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*4000)
+         
+
+             setTimeout(function() {
+               box.innerHTML += '<p>' + myWinner[i] + ' - ' + i + '</p>';
+            },i*5000)}
+
+ if (winner) {
+                    const winnerDiv = document.createElement("div");
+                    winnerDiv.textContent = `Winner ${i + 1}: ${winner}`;
+                    listDiv.appendChild(winnerDiv);
+                }
+            }
+            if (winners.length === 0) {
+                alert("Please enter at least one name.");
+                return;
+            }
+            const listDiv = document.getElementById("list");
+            listDiv.innerHTML = "<h3>Lottery Participants:</h3><ul>" + names.map(name => `<li>${name}</li>`).join("") + "</ul>";
+        }
+
+
+        </script>
+       <script src="app.js">  </script>
+         
