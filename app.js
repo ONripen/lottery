@@ -1,28 +1,32 @@
-
+ //synchronous programming
   setTimeout(() => {
-   document.getElementById('demo').innerText = 'Nripen';
+   console.log("Nripen");
   }, 1000)
 
  setTimeout(() => {
-   document.getElementById('demo').innerText = 'Joy';
+   console.log("Joy");
   }, 2000)
 
 
  setTimeout(() => {
-   document.getElementById('demo').innerText = 'Labonno';
+   console.log("Srabonti");
   }, 3000)
 
 
  setTimeout(() => {
-   document.getElementById('demo').innerText = 'Srabonti';
+   console.log("Kakoly");
   }, 4000)
 
  setTimeout(() => {
-   document.getElementById('demo').innerText = 'I am winner Kakoly';
+   console.log("i am einner labonno");
   }, 5000)
+};
+
+ 
 
 
-  
+
+
 
 
 
