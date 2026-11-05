@@ -20,7 +20,6 @@
  setTimeout(() => {
    console.log("i am einner labonno");
   }, 5000)
-};
 
  
 
